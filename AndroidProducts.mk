@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_gts3lwifi.mk
+    $(LOCAL_DIR)/revengeos_gts3lwifi.mk

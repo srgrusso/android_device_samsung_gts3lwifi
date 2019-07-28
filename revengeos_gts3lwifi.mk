@@ -5,11 +5,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from gts3lwifi device
 $(call inherit-product, device/samsung/gts3lwifi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Revenge stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1440
+REVENGEOS_BUILDTYPE := UNOFFICIAL
+BUILD_GAPPS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_gts3lwifi
+PRODUCT_NAME := revengeos_gts3lwifi
 PRODUCT_DEVICE := gts3lwifi
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SM-T820

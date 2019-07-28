@@ -1,1 +1,1 @@
-add_lunch_combo lineage_gts3lwifi-userdebug
+add_lunch_combo revengeos_gts3lwifi-userdebug
