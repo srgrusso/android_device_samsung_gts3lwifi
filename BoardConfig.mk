@@ -225,6 +225,10 @@ VENDOR_SECURITY_PATCH := 2018-12-01
 
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# RIL
+#TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+TARGET_RIL_VARIANT := caf
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
