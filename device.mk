@@ -152,8 +152,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/display/qdcm_calib_data_ss_dsi_panel_ANA38401_AMS968HH01_QXGA.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_ANA38401_AMS968HH01_QXGA.xml
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    SamsungDoze
+#PRODUCT_PACKAGES += \
+#    SamsungDoze
 
 # DRM
 PRODUCT_PACKAGES += \
