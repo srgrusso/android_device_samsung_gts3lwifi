@@ -21,12 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from gts3lwifi device
 $(call inherit-product, device/samsung/gts3lwifi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_tablet_wifionly.mk)
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gts3lwifi
-PRODUCT_NAME := lineage_gts3lwifi
+PRODUCT_NAME := bliss_gts3lwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T820
 PRODUCT_MANUFACTURER := samsung
@@ -35,8 +38,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=gts3lwifi \
-    PRIVATE_BUILD_DESC="gts3lwifixx-user 9 PPR1.180610.011 T820XXU3CTD5 release-keys"
-
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "samsung/gts3lwifixx/gts3lwifi:9/PPR1.180610.011/T820XXU3CTD5:user/release-keys"
+    PRODUCT_NAME=gts3lwifi 

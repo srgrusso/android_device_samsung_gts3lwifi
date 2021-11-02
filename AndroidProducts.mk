@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_gts3lwifi.mk
+    $(LOCAL_DIR)/bliss_gts3lwifi.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_gts3lwifi-userdebug
+    bliss_gts3lwifi-userdebug
